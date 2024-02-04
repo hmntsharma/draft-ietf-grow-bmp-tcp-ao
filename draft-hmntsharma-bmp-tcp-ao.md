@@ -40,7 +40,7 @@ author:
     organization: Vodafone
     email: hemant.sharma@vodafone.com
 
-normative: 
+normative:
 informative:
 
 --- abstract
