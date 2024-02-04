@@ -43,8 +43,6 @@ author:
 
 normative: 
 informative:
- RFC5925:
- RFC7854:
 
 --- abstract
 
