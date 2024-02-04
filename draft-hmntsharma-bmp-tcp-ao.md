@@ -6,7 +6,7 @@ docname: draft-hmntsharma-bmp-tcp-ao-latest
 submissiontype: independent  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
-consensus: true
+consensus:
 v: 3
 # area: Ops & Management
 # workgroup: GROW
