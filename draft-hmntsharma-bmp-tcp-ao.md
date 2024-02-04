@@ -22,7 +22,7 @@
 title: "TCP-AO Protection for BGP Monitoring Protocol (BMP)"
 category: info
 
-docname: draft-hmntsharma-bmp-tcp-ao.md
+docname: draft-hmntsharma-bmp-tcp-ao
 submissiontype: independent  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -43,7 +43,7 @@ author:
 
 normative: 
 
-informative: 
+informative:
   RFC5925:
   RFC7854:
 
