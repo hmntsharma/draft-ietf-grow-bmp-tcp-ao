@@ -34,7 +34,6 @@ keyword:
  - BMP Security
  - TCP-AO for BMP
 
-
 author:
  -
     fullname: Hemant Sharma
@@ -60,7 +59,6 @@ The BGP Monitoring Protocol (BMP), as specified in RFC7854, recommends employing
 The BGP Monitoring Protocol (BMP) outlined in RFC7854 plays a crucial role in network management by allowing routers to share information about their BGP tables, helping operators monitor and troubleshoot their networks effectively. However, the security considerations associated with BMP have become increasingly critical in light of evolving cyber threats. This document addresses these concerns by introducing a framework that utilizes the Transmission Control Protocol - Authentication Option (TCP-AO), specified in RFC5295, to safeguard BMP sessions.
 
 Extending this security measure to BMP helps mitigate risks associated with unauthorized access, tampering, and other potential security vulnerabilities. By integrating TCP-AO into BMP implementations, network operators can establish a more resilient and trustworthy foundation for BGP monitoring activities.
-
 
 
 # Security Considerations
