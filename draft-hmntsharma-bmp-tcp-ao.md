@@ -44,8 +44,8 @@ author:
 normative: 
 
 informative: 
-[RFC 5925] The TCP Authentication Option
-[RFC 7854] BGP Monitoring Protocol (BMP)
+  RFC5925:
+  RFC7854:
 
 --- abstract
 
