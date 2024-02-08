@@ -9,7 +9,7 @@ date:
 consensus:
 v: 3
 # area: Ops & Management
-# workgroup: GROW
+workgroup: GROW
 keyword:
  - BMP Security
  - TCP-AO for BMP
