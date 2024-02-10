@@ -8,7 +8,7 @@ number:
 date:
 consensus:
 v: 3
-# area: Ops & Management
+area: Ops & Management
 workgroup: GROW
 keyword:
  - BMP Security
@@ -34,7 +34,7 @@ This document outlines the utilization of the Transmission Control Protocol - Au
 
 # Introduction
 
-The BGP Monitoring Protocol (BMP), as specified in RFC7854, recommends employing Internet Protocol Security (IPSec) from RFC4303 to mitigate security concerns related to the Transmission Control Protocol (TCP) session between routers and the BMP station managing BGP route collection. Recognizing the practical limitations of IPSec, this document underscores the preference for the use of Transmission Control Protocol - Authentication Option (TCP-AO) as the authentication method of choice for TCP-based network protocols such as BGP and LDP. A comprehensive discussion of TCP-AO is provided in RFC5925.
+The BGP Monitoring Protocol (BMP), as specified in RFC7854, recommends employing Internet Protocol Security (IPSec) from RFC4303 to mitigate security concerns related to the Transmission Control Protocol (TCP) session between routers and the BMP station managing BGP route collection. This document underscores the preference for the use of Transmission Control Protocol - Authentication Option (TCP-AO) as the authentication method of choice for TCP-based network protocols such as BGP and LDP. A comprehensive discussion of TCP-AO is provided in RFC5925.
 
 # TCP-AO Protection for BGP Monitoring Protocol (BMP)
 
