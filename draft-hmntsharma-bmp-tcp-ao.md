@@ -24,7 +24,7 @@ normative:
 informative:
  RFC5925:
  RFC7854:
- 
+
 --- abstract
 
 This document outlines the utilization of the Transmission Control Protocol - Authentication Option (TCP-AO), as prescribed in RFC5925, for the authentication of Border Gateway Protocol Monitoring Protocol (BMP) sessions, as specified in RFC7854. The intent is to heighten security within the underlying Transmission Control Protocol (TCP) transport layer, ensuring the authentication of BMP sessions established between routers and BMP stations.
