@@ -21,6 +21,10 @@ author:
     fullname: Hemant Sharma
     organization: Vodafone
     email: hemant.sharma@vodafone.com
+ -
+    fullname: Jeffrey Haas
+    organization: Juniper Networks
+    email: jhaas@juniper.net
 
 normative:
  RFC2119:
