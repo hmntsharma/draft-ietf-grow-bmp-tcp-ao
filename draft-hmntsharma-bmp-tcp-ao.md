@@ -1,8 +1,10 @@
 ---
 title: "TCP-AO Protection for BGP Monitoring Protocol (BMP)"
+abbrev: TCP-AO for BMP
 category: info
 
-docname: draft-hmntsharma-bmp-tcp-ao-latest
+docname: draft-hmntsharma-bmp-tcp-ao-03
+updates: 7854
 submissiontype: independent  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -21,34 +23,57 @@ author:
     email: hemant.sharma@vodafone.com
 
 normative:
-informative:
+ RFC2119:
+ RFC8174:
  RFC5925:
  RFC7854:
 
+informative:
+ RFC1122:
+ RFC4303:
+ RFC6978:
+
 --- abstract
 
-This document outlines the utilization of the Transmission Control Protocol - Authentication Option (TCP-AO), as prescribed in RFC5925, for the authentication of Border Gateway Protocol Monitoring Protocol (BMP) sessions, as specified in RFC7854. The intent is to heighten security within the underlying Transmission Control Protocol (TCP) transport layer, ensuring the authentication of BMP sessions established between routers and BMP stations.
+This document outlines the utilization of the TCP Authentication Option (TCP-AO), as specified in RFC5925, for the authentication of BGP Monitoring Protocol (BMP) sessions, as specified in RFC7854. TCP-AO provides for the authentication of BMP sessions established between routers and BMP stations at the TCP layer.
 
 
 --- middle
 
+# Requirements Language
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL",
+"SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT
+RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
+interpreted as described in BCP 14 {{RFC2119}}
+{{RFC8174}} when, and only when, they appear in
+all capitals, as shown here.
+
 # Introduction
 
-The BGP Monitoring Protocol (BMP), as specified in RFC7854, advocates for the implementation of Internet Protocol Security (IPSec) from RFC4303 to address security issues concerning the BMP session between routers and the BMP station managing BGP route collection. This document underscores the use of Transmission Control Protocol - Authentication Option (TCP-AO) as the authentication mechanism ensuring end-to-end authentication of BMP sessions between the routers and the BMP stations. TCP-AO is also the choice of authentication for TCP-based network protocols such as BGP and LDP. A comprehensive discussion of TCP-AO is provided in RFC5925.
+The BGP Monitoring Protocol (BMP), as specified in {{RFC7854}}, recommends the use of IPsec {{RFC4303}} to address security considerations concerning the BMP session between a router and the BMP station managing BGP route collection. This document suggeests the use of the TCP Authentication Option (TCP-AO) as an authentication mechanism to ensure end-to-end authentication of BMP sessions between the routers and the BMP stations. TCP-AO is also the choice of authentication for TCP-based network protocols such as BGP and LDP. A comprehensive discussion of TCP-AO is provided in {{RFC5925}}.
 
 # TCP-AO Protection for BGP Monitoring Protocol (BMP)
 
-The BGP Monitoring Protocol (BMP) outlined in RFC7854 plays a crucial role in network management by allowing routers to share information about their BGP tables, helping operators monitor and troubleshoot their networks effectively. However, the security considerations associated with BMP have become increasingly critical in light of evolving cyber threats. This document proposes that these concerns be addressed by introducing a framework that utilizes the Transmission Control Protocol - Authentication Option (TCP-AO), specified in RFC5925, to safeguard BMP sessions.
+The BGP Monitoring Protocol (BMP), defined in {{RFC7854}}, plays a crucial role in network management by allowing routers to share information about their BGP RIBs.  This helps operators monitor and troubleshoot their networks effectively. However, the security considerations associated with BMP have become increasingly critical in light of evolving threats. This document proposes that these threats be addressed by utilizing TCP-AO to safeguard BMP sessions.
 
-Extending this security measure to BMP helps mitigate risks associated with unauthorized access, tampering, and other potential security vulnerabilities. By integrating TCP-AO into BMP implementations, network operators can establish a more resilient and trustworthy foundation for BGP monitoring activities.
+TCP-AO provides protection against spoofed TCP segments and helps protect the integrity of the TCP session.  Further, it provides for the authentication of session endpoints.  Similar to BGP, BMP can benefit from these security properties.
 
-TCP-AO is not intended as a direct substitute for IPSec, nor is it suggested as such in this document.
+TCP-AO helps protect the integrity of BMP session liveness at the TCP layer.  As outlined in {{Section 3.2 of RFC7854}}, BMP operates as a unidirectional protocol, meaning no BMP messages are transmitted from the monitoring station to the monitored router.  BMP relies on the underlying TCP session, supported by TCP keepalives {{RFC1122}}, to prevent session timeouts from the station to the monitored router.
 
-As outlined in section "3.2. Connection Establishment and Termination" of RFC 7854, BMP operates as a unidirectional protocol, meaning no messages are transmitted from the monitoring station to the monitored router. Consequently, BMP lacks an effective means of tracking a session between the router and the station. It relies on the underlying TCP session, supported by TCP keepalives (RFC1122), to maintain session activity. Therefore, it is recommended to authenticate the end-to-end TCP session between the router and the BMP station using TCP-AO.
+## Operational Recommendations for BMP
+
+The implementation and use of TCP-AO to protect BMP session is RECOMMENDED in circumstances where the session might not otherwise be protected by alternative mechanisms such as IPsec.
 
 # Security Considerations
 
-The security of the BMP session gets a boost with TCP-AO, seamlessly implemented over the existing TCP transport, ensuring heightened protection without any additional load.
+TCP-AO is not intended as a direct substitute for IPsec, nor is it suggested as such in this document.  The Security Considerations for TCP-AO in {{Section 11 of RFC7854}} all apply to its application for BMP.
+
+TCP-AO may inhibit connectionless resets when session keys have been lost or changed.  This may cause BMP sessions to linger in some circumstances; however, BGP shares this consideration.
+
+In the presence of NAT, TCP-AO requires additional support as defined in {{RFC6978}}.
+
+TCP-AO does not provide for privacy for the BMP protocol's contents.  When this is desired, IPsec with Encapsulating Security Payload (ESP) can help provide for such privacy.
 
 # IANA Considerations
 
@@ -60,4 +85,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-This document is an outcome of the experiences gained through implementing BMP. While TCP-AO safeguards other TCP protocols, BMP lacks the same level of protection within this context.
+This document is an outcome of the experiences gained through implementing BMP. While TCP-AO safeguards other TCP protocols, BMP currently lacks the same level of protections.
