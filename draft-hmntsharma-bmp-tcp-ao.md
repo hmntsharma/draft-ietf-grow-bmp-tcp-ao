@@ -3,7 +3,7 @@ title: "TCP-AO Protection for BGP Monitoring Protocol (BMP)"
 abbrev: TCP-AO for BMP
 category: info
 
-docname: draft-hmntsharma-bmp-tcp-ao-03
+docname: draft-hmntsharma-bmp-tcp-ao-latest
 updates: 7854
 submissiontype: independent  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
@@ -51,7 +51,7 @@ all capitals, as shown here.
 
 # Introduction
 
-The BGP Monitoring Protocol (BMP), as specified in {{RFC7854}}, recommends the use of IPsec {{RFC4303}} to address security considerations concerning the BMP session between a router and the BMP station managing BGP route collection. This document suggeests the use of the TCP Authentication Option (TCP-AO) as an authentication mechanism to ensure end-to-end authentication of BMP sessions between the routers and the BMP stations. TCP-AO is also the choice of authentication for TCP-based network protocols such as BGP and LDP. A comprehensive discussion of TCP-AO is provided in {{RFC5925}}.
+The BGP Monitoring Protocol (BMP), as specified in {{RFC7854}}, recommends the use of IPsec {{RFC4303}} to address security considerations concerning the BMP session between a router and the BMP station managing BGP route collection. This document suggests the use of the TCP Authentication Option (TCP-AO) as an authentication mechanism to ensure end-to-end authentication of BMP sessions between the routers and the BMP stations. TCP-AO is also the choice of authentication for TCP-based network protocols such as BGP and LDP. A comprehensive discussion of TCP-AO is provided in {{RFC5925}}.
 
 # TCP-AO Protection for BGP Monitoring Protocol (BMP)
 
@@ -85,4 +85,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-This document is an outcome of the experiences gained through implementing BMP. While TCP-AO safeguards other TCP protocols, BMP currently lacks the same level of protections.
+This document is an outcome of the experiences gained through implementing BMP. While TCP-AO safeguards other TCP protocols, BMP currently lacks the same level of protection.
