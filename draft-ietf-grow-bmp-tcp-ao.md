@@ -3,7 +3,7 @@ title: "TCP-AO Protection for BGP Monitoring Protocol (BMP)"
 abbrev: TCP-AO for BMP
 category: info
 
-docname: draft-hmntsharma-bmp-tcp-ao-latest
+docname: draft-ietf-grow-bmp-tcp-ao-latest
 updates: 7854
 submissiontype: independent  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
