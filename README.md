@@ -2,8 +2,8 @@
 
 This is the working area for the individual Internet-Draft, "TCP-AO Protection for BGP Monitoring Protocol (BMP)".
 
-* [Editor's Copy](https://hmntsharma.github.io/draft-hmntsharma-bmp-tcp-ao/#go.draft-hmntsharma-bmp-tcp-ao.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-hmntsharma-bmp-tcp-ao)
+* [Editor's Copy](https://hmntsharma.github.io/draft-itef-grow-bmp-tcp-ao/#go.draft-ietf-grow-bmp-tcp-ao.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-grow-bmp-tcp-ao)
 * [Individual Draft](https://datatracker.ietf.org/doc/html/draft-hmntsharma-bmp-tcp-ao)
 * [Compare Editor's Copy to Individual Draft](https://hmntsharma.github.io/draft-hmntsharma-bmp-tcp-ao/#go.draft-hmntsharma-bmp-tcp-ao.diff)
 
