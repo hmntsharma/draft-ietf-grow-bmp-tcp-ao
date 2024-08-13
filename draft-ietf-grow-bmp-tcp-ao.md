@@ -31,7 +31,6 @@ normative:
  RFC8174:
  RFC5925:
  RFC7854:
- RFC5378:
 
 informative:
  RFC1122:
