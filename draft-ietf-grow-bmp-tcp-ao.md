@@ -5,7 +5,7 @@ category: info
 
 docname: draft-ietf-grow-bmp-tcp-ao-latest
 updates: 7854
-submissiontype: independent  # also: "independent", "editorial", "IAB", or "IRTF"
+#submissiontype: independent  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
 consensus:
@@ -15,6 +15,12 @@ workgroup: GROW
 keyword:
  - BMP Security
  - TCP-AO for BMP
+
+submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
+cat: std
+ipr: trust200902
+
+
 
 
 
