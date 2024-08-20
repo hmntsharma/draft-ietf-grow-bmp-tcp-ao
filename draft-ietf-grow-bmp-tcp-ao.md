@@ -2,7 +2,7 @@
 v: 3
 title: "TCP-AO Protection for BGP Monitoring Protocol (BMP)"
 abbrev: TCP-AO for BMP
-category: info
+category: std
 
 docname: draft-ietf-grow-bmp-tcp-ao-latest
 updates: 7854
