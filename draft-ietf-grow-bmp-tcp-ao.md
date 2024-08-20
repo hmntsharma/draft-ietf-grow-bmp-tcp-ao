@@ -6,7 +6,7 @@ category: info
 
 docname: draft-ietf-grow-bmp-tcp-ao-latest
 updates: 7854
-submissiontype: editorial  # also: "independent", "editorial", "IAB", or "IRTF"
+submissiontype: independent  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
 consensus:
