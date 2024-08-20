@@ -1,4 +1,5 @@
 ---
+v: 3
 title: "TCP-AO Protection for BGP Monitoring Protocol (BMP)"
 abbrev: TCP-AO for BMP
 category: info
