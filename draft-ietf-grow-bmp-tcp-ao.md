@@ -21,9 +21,6 @@ cat: std
 ipr: trust200902
 
 
-
-
-
 author:
  -
     fullname: Hemant Sharma
@@ -47,7 +44,7 @@ informative:
 
 --- abstract
 
-This document outlines the utilization of the TCP Authentication Option (TCP-AO), as specified in RFC5925, for the authentication of BGP Monitoring Protocol (BMP) sessions, as specified in RFC7854. TCP-AO provides for the authentication of BMP sessions established between routers and BMP stations at the TCP layer.
+This document outlines the utilization of the TCP Authentication Option (TCP-AO), as specified in {{RFC5925}}, for the authentication of BGP Monitoring Protocol (BMP) sessions, as specified in {{RFC7854}}. TCP-AO provides for the authentication of BMP sessions established between routers and BMP stations at the TCP layer.
 
 
 --- middle
