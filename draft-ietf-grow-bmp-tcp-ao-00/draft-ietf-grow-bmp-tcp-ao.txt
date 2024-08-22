@@ -5,8 +5,8 @@
 GROW                                                           H. Sharma
 Internet-Draft                                                  Vodafone
 Updates: 7854 (if approved)                                      J. Haas
-Intended status: Informational                          Juniper Networks
-Expires: 21 February 2025                                 20 August 2024
+Intended status: Standards Track                        Juniper Networks
+Expires: 23 February 2025                                 22 August 2024
 
 
           TCP-AO Protection for BGP Monitoring Protocol (BMP)
@@ -15,8 +15,8 @@ Expires: 21 February 2025                                 20 August 2024
 Abstract
 
    This document outlines the utilization of the TCP Authentication
-   Option (TCP-AO), as specified in RFC5925, for the authentication of
-   BGP Monitoring Protocol (BMP) sessions, as specified in RFC7854.
+   Option (TCP-AO), as specified in [RFC5925], for the authentication of
+   BGP Monitoring Protocol (BMP) sessions, as specified in [RFC7854].
    TCP-AO provides for the authentication of BMP sessions established
    between routers and BMP stations at the TCP layer.
 
@@ -42,7 +42,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 February 2025.
+   This Internet-Draft will expire on 23 February 2025.
 
 Copyright Notice
 
@@ -53,7 +53,10 @@ Copyright Notice
    Provisions Relating to IETF Documents (https://trustee.ietf.org/
    license-info) in effect on the date of publication of this document.
    Please review these documents carefully, as they describe your rights
-   and restrictions with respect to this document.
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
 
 Table of Contents
 
