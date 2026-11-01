@@ -6,7 +6,7 @@ GROW                                                           H. Sharma
 Internet-Draft                                                  Vodafone
 Updates: 7854 (if approved)                                      J. Haas
 Intended status: Standards Track                        Juniper Networks
-Expires: 26 July 2026                                    22 January 2026
+Expires: 5 May 2027                                      1 November 2026
 
 
           TCP-AO Protection for BGP Monitoring Protocol (BMP)
@@ -42,7 +42,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 26 July 2026.
+   This Internet-Draft will expire on 5 May 2027.
 
 Copyright Notice
 
